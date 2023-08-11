@@ -9,4 +9,4 @@ gem "rake", "~> 12.0"
 gem "jwt"
 gem 'yaml', '~> 0.2.1'
 # OpenSSl
-gem 'openssl', '~> 2.2'
+gem 'openssl', '~> 3.0'
