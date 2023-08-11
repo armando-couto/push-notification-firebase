@@ -1,44 +1,60 @@
 # Push::Notification::Firebase
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/push/notification/firebase`. To experiment with that code, run `bin/console` for an interactive prompt.
+Esta gem foi especialmente projetada para simplificar a vida dos desenvolvedores que desejam integrar as funcionalidades de Push Notification do Firebase em seus aplicativos. Através de uma interface
+amigável e uma documentação detalhada, a ferramenta promete eliminar a complexidade inerente ao processo de configuração e envio de notificações. Ela serve como uma ponte eficaz entre o seu código e o
+Firebase, garantindo que as mensagens sejam enviadas de maneira eficiente e sem erros. A otimização do tempo e a eficácia da comunicação são dois dos principais benefícios dessa gem, tornando-a um
+recurso indispensável para quem busca excelência em desenvolvimento.
 
-TODO: Delete this and the text above, and describe your gem
+## Instalacao
 
-## Installation
-
-Add this line to your application's Gemfile:
+Adicione esta linha ao Gemfile do seu aplicativo:
 
 ```ruby
 gem 'push-notification-firebase'
 ```
 
-And then execute:
+Depois execute:
 
     $ bundle install
 
-Or install it yourself as:
+Ou instale:
 
     $ gem install push-notification-firebase
 
-## Usage
+## Exxemplo
 
-TODO: Write usage instructions here
+```ruby
+require 'push/notification/firebase'
+include Push::Notification::Firebase
 
-## Development
+# ... 
+logger = Logger.new("development.log")
+hash = {
+  "title": "Titulo",
+  "token": "TOKEN-DO-DISPOSITIVO",
+  "message": "Mensagem para o usuário",
+}
+Push::Notification::Firebase::processing hash, logger
+# ...  
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+## Desenvolvimento
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Após clonar o repositório, execute `bin/setup` para instalar as dependências. Você também pode executar `bin/console` para um prompt interativo que permitirá que você experimente.
 
-## Contributing
+Para instalar esta gem na sua máquina local, execute `bundle exec rake install`. Para lançar uma nova versão, atualize o número da versão em `version.rb` e, em seguida,
+execute `bundle exec rake release`, o que criará uma tag git para a versão, enviará os commits e tags git, e enviará o arquivo `.gem` para [rubygems.org](https://rubygems.org).
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/push-notification-firebase. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/push-notification-firebase/blob/master/CODE_OF_CONDUCT.md).
+## Contribuindo
 
+Relatórios de bugs e solicitações de pull são bem-vindos no GitHub em https://github.com/armando-couto/push-notification-firebase. Este projeto tem a intenção de ser um espaço seguro e acolhedor para
+colaboração, e espera-se que os colaboradores adiram ao [code of conduct](https://github.com/armando-couto/push-notification-firebase/blob/master/CODE_OF_CONDUCT.md).
 
-## License
+## Licença
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+A gem está disponível como código aberto sob os termos da [MIT License](https://opensource.org/licenses/MIT).
 
-## Code of Conduct
+## Código de Conduta
 
-Everyone interacting in the Push::Notification::Firebase project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/push-notification-firebase/blob/master/CODE_OF_CONDUCT.md).
+Todos que interagem nas bases de código, rastreadores de problemas, salas de chat e listas de e-mails do projeto Push::Notification::Firebase são esperados a seguir
+o [código de conduta](https://github.com/armando-couto/push-notification-firebase/blob/main/CODE_OF_CONDUCT.md).
