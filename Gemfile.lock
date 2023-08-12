@@ -8,7 +8,7 @@ GEM
   specs:
     jwt (2.7.1)
     openssl (3.1.0)
-    rake (12.3.3)
+    rake (13.0.6)
     yaml (0.2.1)
 
 PLATFORMS
@@ -19,7 +19,7 @@ DEPENDENCIES
   jwt
   openssl (~> 3.0)
   push-notification-firebase!
-  rake (~> 12.0)
+  rake (~> 13.0)
   yaml (~> 0.2.1)
 
 BUNDLED WITH
