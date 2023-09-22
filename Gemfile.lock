@@ -7,7 +7,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     jwt (2.7.1)
-    openssl (3.1.0)
+    openssl (3.2.0)
     rake (13.0.6)
     yaml (0.2.1)
 
