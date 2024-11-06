@@ -11,7 +11,7 @@ GEM
       base64
     openssl (3.2.0)
     rake (13.2.1)
-    yaml (0.3.0)
+    yaml (0.4.0)
 
 PLATFORMS
   arm64-darwin-22
@@ -22,7 +22,7 @@ DEPENDENCIES
   openssl (~> 3.0)
   push-notification-firebase!
   rake (~> 13.0)
-  yaml (~> 0.3.0)
+  yaml (~> 0.4.0)
 
 BUNDLED WITH
    2.4.18
