@@ -10,7 +10,7 @@ GEM
     jwt (2.10.1)
       base64
     openssl (3.3.0)
-    rake (13.2.1)
+    rake (13.3.0)
     yaml (0.4.0)
 
 PLATFORMS
