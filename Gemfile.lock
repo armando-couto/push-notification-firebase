@@ -7,7 +7,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     base64 (0.3.0)
-    jwt (3.1.1)
+    jwt (3.1.2)
       base64
     openssl (3.3.0)
     rake (13.3.0)
